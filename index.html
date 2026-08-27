@@ -1,135 +1,543 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>سایت آزمایشی من</title>
+    <meta name="description"
+        content="یک وب‌سایت استاتیک مدرن ساخته شده با HTML و CSS">
+
+    <title>Nova | طراحی دیجیتال</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
         <div class="container navbar">
 
-            <h1 class="logo">MySite</h1>
+            <a href="#" class="logo">
+                NOVA<span>.</span>
+            </a>
 
-            <nav>
+
+            <nav class="nav">
+
                 <a href="#home">خانه</a>
                 <a href="#about">درباره ما</a>
                 <a href="#services">خدمات</a>
-                <a href="#contact">تماس با ما</a>
+                <a href="#projects">نمونه کارها</a>
+
             </nav>
 
-        </div>
-    </header>
 
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-
-        <div class="container hero-content">
-
-            <h2>به سایت من خوش آمدید 👋</h2>
-
-            <p>
-                این یک وب‌سایت استاتیک ساده است که فقط با HTML و CSS ساخته شده است.
-            </p>
-
-            <a href="#services" class="btn">
-                مشاهده خدمات
+            <a href="#contact" class="nav-button">
+                شروع همکاری
             </a>
 
         </div>
 
-    </section>
+    </header>
 
 
-    <!-- About Section -->
-    <section class="about" id="about">
 
-        <div class="container">
+    <!-- ================= HERO ================= -->
 
-            <h2>درباره ما</h2>
+    <main>
 
-            <p>
-                ما یک تیم خلاق هستیم که به طراحی و توسعه وب‌سایت‌های مدرن علاقه داریم.
-                این بخش صرفاً برای تست ساختار یک سایت ساده طراحی شده است.
-            </p>
+        <section class="hero" id="home">
 
-        </div>
+            <div class="container hero-container">
 
-    </section>
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        ✦ طراحی مدرن برای دنیای دیجیتال
+                    </span>
 
 
-    <!-- Services -->
-    <section class="services" id="services">
+                    <h1>
+                        ایده‌های شما را به
+                        <span>تجربه‌ای دیجیتال</span>
+                        تبدیل می‌کنیم.
+                    </h1>
 
-        <div class="container">
 
-            <h2>خدمات ما</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>طراحی سایت</h3>
                     <p>
-                        طراحی سایت‌های مدرن، سریع و واکنش‌گرا.
+                        ما به کسب‌وکارها کمک می‌کنیم تا با طراحی‌های مدرن،
+                        سریع و کاربرپسند، حضور قدرتمندتری در دنیای دیجیتال
+                        داشته باشند.
                     </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#contact" class="btn btn-primary">
+                            شروع پروژه
+                            <span>←</span>
+                        </a>
+
+
+                        <a href="#services" class="btn btn-secondary">
+                            مشاهده خدمات
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>+120</strong>
+                            <span>پروژه موفق</span>
+                        </div>
+
+                        <div>
+                            <strong>+80</strong>
+                            <span>مشتری راضی</span>
+                        </div>
+
+                        <div>
+                            <strong>5 سال</strong>
+                            <span>تجربه کاری</span>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card">
-                    <h3>طراحی رابط کاربری</h3>
-                    <p>
-                        طراحی رابط کاربری زیبا و کاربرپسند.
-                    </p>
-                </div>
 
-                <div class="card">
-                    <h3>بهینه‌سازی</h3>
-                    <p>
-                        بهینه‌سازی سرعت و تجربه کاربری وب‌سایت.
-                    </p>
+
+                <div class="hero-visual">
+
+                    <div class="glow glow-one"></div>
+                    <div class="glow glow-two"></div>
+
+
+                    <div class="visual-card main-card">
+
+                        <div class="card-top">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="card-label">
+                                DIGITAL STUDIO
+                            </span>
+
+                        </div>
+
+
+                        <div class="visual-content">
+
+                            <div class="mini-badge">
+                                CREATIVE
+                            </div>
+
+                            <h2>
+                                Create.
+                                <br>
+                                Build.
+                                <br>
+                                <span>Grow.</span>
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-one">
+
+                        <span class="floating-icon">✦</span>
+
+                        <div>
+                            <strong>Modern Design</strong>
+                            <small>Creative solutions</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-two">
+
+                        <div class="chart">
+
+                            <span style="height: 40%;"></span>
+                            <span style="height: 65%;"></span>
+                            <span style="height: 50%;"></span>
+                            <span style="height: 90%;"></span>
+
+                        </div>
+
+                        <div>
+                            <strong>+48%</strong>
+                            <small>Growth</small>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
 
-        <div class="container">
+        <!-- ================= SERVICES ================= -->
 
-            <h2>تماس با ما</h2>
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>خدمات ما</span>
+
+                    <h2>
+                        هر چیزی که برای حضور
+                        <br>
+                        در دنیای دیجیتال نیاز دارید.
+                    </h2>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <div class="service-icon">
+                            ◈
+                        </div>
+
+                        <h3>طراحی وب‌سایت</h3>
+
+                        <p>
+                            طراحی وب‌سایت‌های مدرن، سریع و واکنش‌گرا
+                            با تمرکز بر تجربه کاربری.
+                        </p>
+
+                        <a href="#">
+                            بیشتر بدانید ←
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <div class="service-icon">
+                            ◉
+                        </div>
+
+                        <h3>طراحی رابط کاربری</h3>
+
+                        <p>
+                            خلق رابط‌های کاربری زیبا و حرفه‌ای که کاربران
+                            از کار کردن با آن لذت ببرند.
+                        </p>
+
+                        <a href="#">
+                            بیشتر بدانید ←
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <div class="service-icon">
+                            ↗
+                        </div>
+
+                        <h3>رشد دیجیتال</h3>
+
+                        <p>
+                            کمک به کسب‌وکار شما برای ساخت یک حضور دیجیتال
+                            قوی و مؤثر.
+                        </p>
+
+                        <a href="#">
+                            بیشتر بدانید ←
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="container about-container">
+
+
+                <div class="about-visual">
+
+                    <div class="about-box about-box-main">
+
+                        <span>01</span>
+
+                        <h3>
+                            طراحی با
+                            <br>
+                            هدف
+                        </h3>
+
+                    </div>
+
+
+                    <div class="about-box about-box-small">
+
+                        <span>02</span>
+
+                        <p>
+                            ساده، سریع
+                            <br>
+                            و حرفه‌ای
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="about-content">
+
+                    <span class="section-tag">
+                        درباره ما
+                    </span>
+
+
+                    <h2>
+                        طراحی خوب فقط
+                        <span>زیبا نیست.</span>
+                    </h2>
+
+
+                    <p>
+                        ما معتقدیم یک وب‌سایت موفق باید علاوه بر ظاهر زیبا،
+                        سریع، ساده و قابل استفاده باشد.
+                    </p>
+
+
+                    <p>
+                        هدف ما ساخت تجربه‌هایی است که هم کاربران دوست داشته
+                        باشند و هم به رشد کسب‌وکار کمک کنند.
+                    </p>
+
+
+                    <a href="#contact" class="text-link">
+                        بیشتر درباره ما بدانید
+                        <span>←</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects" id="projects">
+
+            <div class="container">
+
+                <div class="projects-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            نمونه کارها
+                        </span>
+
+                        <h2>
+                            پروژه‌هایی که
+                            <span>ساخته‌ایم.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <a href="#" class="view-all">
+                        مشاهده همه ←
+                    </a>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <div class="project-card project-large">
+
+                        <div class="project-content">
+
+                            <span>WEB DESIGN</span>
+
+                            <h3>
+                                Modern Architecture
+                            </h3>
+
+                            <p>
+                                طراحی وب‌سایت شرکتی
+                            </p>
+
+                        </div>
+
+                        <div class="project-shape shape-one"></div>
+
+                    </div>
+
+
+
+                    <div class="project-card">
+
+                        <div class="project-content">
+
+                            <span>BRANDING</span>
+
+                            <h3>
+                                Creative Studio
+                            </h3>
+
+                            <p>
+                                طراحی هویت بصری
+                            </p>
+
+                        </div>
+
+                        <div class="project-shape shape-two"></div>
+
+                    </div>
+
+
+
+                    <div class="project-card">
+
+                        <div class="project-content">
+
+                            <span>UI / UX</span>
+
+                            <h3>
+                                Finance App
+                            </h3>
+
+                            <p>
+                                طراحی رابط کاربری
+                            </p>
+
+                        </div>
+
+                        <div class="project-shape shape-three"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container contact-container">
+
+                <div>
+
+                    <span class="section-tag">
+                        شروع همکاری
+                    </span>
+
+                    <h2>
+                        آماده‌اید چیزی
+                        <span>فوق‌العاده</span>
+                        بسازیم؟
+                    </h2>
+
+                </div>
+
+
+                <a href="mailto:hello@example.com" class="contact-button">
+
+                    <span>hello@example.com</span>
+
+                    <strong>←</strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#" class="logo">
+                NOVA<span>.</span>
+            </a>
+
 
             <p>
-                برای ارتباط با ما می‌توانید از طریق ایمیل زیر اقدام کنید.
+                طراحی و توسعه با HTML و CSS
             </p>
 
+
             <p>
-                example@email.com
+                © 2026 NOVA Studio
             </p>
 
         </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 تمامی حقوق محفوظ است.
-        </p>
 
     </footer>
 
 </body>
+
 </html>
